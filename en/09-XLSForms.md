@@ -22,13 +22,13 @@
 
 ## Overview {#overview}
 
-Every data collection project is different - starting with the questions you're asking. These questions shape everything about the project- including the entry fields for data collection.
+Every data collection project is different - starting with the goal of the project. Having a clear understanding of what type of information you need to collect and which questions will get you to that end goal is important. The format, order and structure of the questions you are asking make a huge difference in the field and when you are conducting analysis on the data.
 
-The Cadasta Platform allows you to define your own data collection schema, so you can tailor it around the specific questions you're asking. These questions could include contact details, geographic place names or how the land was acquired.
+The Cadasta Platform allows you to define your own data collection schema, or {definition of schema or alternative word}. You can tailor the survey around the specific questions you are asking. These questions could include contact details, geographic place names or how the land was acquired.
 
-In the Cadasta Platform, the underlying technology that enables this comes from [XLSForm](http://xlsform.org/). XLSForm is a form standard that allow you to create forms using a spreadsheet. The forms are low-fi alternatives to a database. They are also designed to handle information of varying degrees of complexity.  
+The underlying technology in the Cadasta Platform is [XLSForm](http://xlsform.org/). XLSForm is a form standard that allows you to create a custom questionaire using a spreadsheet (or Google sheet)-- instead of a clunky database. With XLSForm, you can add various types of fields, like integers, radio questions, checkbox questions, text fields, etc. You can also add default values or logic that will show certain questions depending on the answers of previous questions. The forms are low-fi alternatives to a database. They are also designed to handle information of varying degrees of complexity.  
 
-In this section, you'll learn about how to use XLSForms designed specifically for use with the Cadasta system. 
+The Cadasta Platform uses a subset of features from XLSForm so that users are able to focus on custom questions they want to ask in the field and on the web. In this section, you'll learn about how to use XLSForms designed specifically for use with the Cadasta system. 
 
 ## Types of Cadasta Template Forms {#types}
 
@@ -42,7 +42,7 @@ When it comes to data schemas, land rights documentation often falls into one of
 
 Cadasta has designed a template form for each of these use cases, which you can download here: 
 
-> Katrina - please check links below. Are they correct still?
+> These are old links.  We should get the forms finalized and then have Adrienne put them up on the s3 server.  I think we could get rid of these forms... unless we think the more the merrier... the names are "more technical" so we could have these forms be for people who understand one-to-many relationships, etc or we could rename these older form to what theme they are capturing. 
 
 * [Standard Form(also knows as a One-to-One Form)](https://s3-us-west-2.amazonaws.com/cadasta-resources/sample-forms/standard_cadasta_questionnaire.xlsx)
 * [One-to-Many Form](https://s3-us-west-2.amazonaws.com/cadasta-resources/sample-forms/multiple_party_standard_cadasta_questionnaire.xlsx)
@@ -54,34 +54,33 @@ Cadasta has designed a template form for each of these use cases, which you can 
 
 ## Parts of a Cadasta Form {#parts}
 
-Each Cadasta form follows a similar structure. Here, we're looking at the [One-to-Many Form](https://s3-us-west-2.amazonaws.com/cadasta-resources/sample-forms/multiple_party_standard_cadasta_questionnaire.xlsx). 
+Each Cadasta form follows a similar structure. Here, we are looking at the [One-Location-to-Many-Parties Form](https://s3-us-west-2.amazonaws.com/cadasta-resources/sample-forms/multiple_party_standard_cadasta_questionnaire.xlsx). 
 
 ### Form Tabs
 
 There are 3 tabs. 
 
-* **Survey** shows all of the survey questions you’re asking. 
-* **Choices** lists all of the choices that appear in multiple choice questions or drop-down menus. 
-* And finally, **Settings** has some basic information about the form and its default language.
-
+* **Survey** shows all of the survey questions. 
+* **Choices** lists all of the choices that appear in single or multiple choice questions (radio or checkboxes). 
+* And finally, **Settings** has the required form name and language information. 
 
 ### Survey Tab {#survey-tab}
 
 > Section notes:
-* Indicate required and nonrequired fees.
+* Indicate required and nonrequired fees. {fields?}
 
 > [add image]
 
-The Survey Tab shows all of the survey questions you're asking. This section outlines everything you need to know about this important tab.
+The Survey Tab shows all of the survey questions. This section outlines everything you need to know about this important tab.
 
 #### Sections & Color Coding
 
 In Cadasta’s structure, the questions are divided into four parts, each with its own color coding:
 
-* **Mandatory Fields**, which house some of the required meta information as well as geographic data collection options. These fields cannot be modified.
-* **Location Information**, for collecting basic information such as how the land is used or whether there has been recent flooding.
-* **Party Information**, for information about people using the location.
-* **Relationship information**, describing the kind relationship (or tenure) between the land and the people who use it.
+* **Mandatory Fields (Grey)**: required metadata from the phone, geographical information (all records in Cadasta must have a coordinate),and general location/party/relationship information. These fields cannot be modified (and must be answered).
+* **Location Information (Blue)**: for collecting basic information such as how the land is used or whether there has been recent flooding.
+* **Party Information (Green)**: for information about people using the location, like age, occupation, or .
+* **Relationship information (Orange)**: describing the relationship (or tenure) between the land and the people who use it.
 
 > link to Project Resources
 
